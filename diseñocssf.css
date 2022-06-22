@@ -1,0 +1,55 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+body{
+    margin: 0px;
+}
+#Titulo1{
+    padding: 1px;
+ background-color: rgb(42, 112, 112);
+}
+
+ul{
+    list-style-type: none;/*Eliminar viñetas*/
+    margin: 0; /*Eliminar margen */
+    padding: 0; /*Eliminar padding*/
+    overflow: hidden; /*Cortar el contenido si no cabe*/
+    display: flex; /*Contenedor flexible*/
+
+}
+li a, .btndespegable {
+    display: inline-block; /*Desplegar elemento en forma de bloque*/
+    color: rgb(0,1,2); /*Aplicar color a la fuente*/
+    text-align: center; /*Centrar el texto*/
+    padding: 10px 16px; /*Aplicar padding*/
+    text-decoration: none; /*Desactivar la decoración*/
+}
+
+li  a:hover, .f-despegable:hover .btndespegable {
+    background-color: rgb(19,127,141);
+    color: white;
+}
+.cont-despegable {
+display: none; /*Ocultar Contenedor*/
+position: absolute; /*Aplicar posiciòn abosulta*/
+background-color: #f5f7f8; /*Aplicar color de fondo*/
+min-width: 200px; /*Aplicar ancho mínimo de 200px*/
+/*Aplicar sombra*/
+box-shadow: 0px 8px 16px 0px rgba(36, 225, 231, 0.856);
+z-index: 1; /*Ubicarlo sobre los otros contenedores*/
+}
+
+.f-despegable:hover .cont-despegable {
+    display: block; /*Mostrar el contenedor*/
+}
+.cont-despegable a{
+    color: black; /*Aplicar el color negro en el texto*/
+    padding: 12px 16px; /*Agregar relleno*/
+    text-decoration: none; /*Eliminar las caracteristicas del texto*/
+    display: block; /*Convertir formato bloque el elemento*/
+    text-align: left; /*Alinear el texto a la izquierda */
+}
+.cont-despegable a:hover{
+    background-color: #d8d6d6; /*Color de fondo*/
+    color: rgb(3,47,68); /*Color del texto*/
+}
